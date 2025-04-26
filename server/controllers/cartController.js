@@ -1,4 +1,5 @@
 import User from "../models/User.js"
+
 // update user cartdata :/api/cart/update
 
 
@@ -17,6 +18,7 @@ import User from "../models/User.js"
 //         res.json({success: false, message: error.message}); 
 //     }
 // }
+
 export const updateCart = async (req, res) => {
     try {
         // Get userId from middleware (req.userId) not from req.body
