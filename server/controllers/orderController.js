@@ -19,7 +19,7 @@ export const placeOrderCOD = async (req, res)=>{
         }, 0)
 
         // Add tax charge 2 %
-        amount =+ Math.floor(amount * 0.02);
+        amount += Math.floor(amount * 0.02);
 
         await Order.create({
             userId,
@@ -66,7 +66,7 @@ export const placeOrderStripe = async (req, res)=>{
         }, 0)
 
         // Add tax charge 2 %
-        amount =+ Math.floor(amount * 0.02);
+        amount += Math.floor(amount * 0.02);
 
         const order = await Order.create({
             userId,
@@ -106,6 +106,8 @@ export const placeOrderStripe = async (req, res)=>{
 
             }
         }) 
+        order.isPaid = true;
+        await order.save();
         return res.json({success: true, url: session.url});
 
     } catch (error) {
@@ -121,7 +123,7 @@ export const stripeWebhooks = async (request, response)=>{
     //stripe gateway initialize 
     const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY);
 
-    const sig = request.header["stripe-signature"];
+    const sig = request.headers["stripe-signature"];
 
     let event;
 
