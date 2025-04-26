@@ -18,8 +18,7 @@ export const AppContextProvider = ({children}) =>{
     const [isSeller, setIsSeller] = useState(false);
     const [showUserLogin, setShowUserLogin] = useState(false);
     const [products, setProducts] = useState([]);
-   // const [cartItems, setCartItems] = useState({});
-    const [cartItems, setCartItems] = useState(null);
+    const [cartItems, setCartItems] = useState(null);  
     const [searchQuery, setSearchQuery] = useState({});
   
     
