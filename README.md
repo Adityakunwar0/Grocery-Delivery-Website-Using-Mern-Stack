@@ -29,13 +29,13 @@ https://grocery-six-sigma.vercel.app/
  -  View paid/COD orders
 
 ### Tech Stack
- - Frontend
+ ### Frontend
   - React.js with React Router
   - Tailwind CSS for modern UI
   - React Context API for global state
   - React Hot Toast for notifications
 
- - Backend
+ ### Backend
   - Node.js + Express.js
   - MongoDB with Mongoose
   - JWT + Cookies for authentication
