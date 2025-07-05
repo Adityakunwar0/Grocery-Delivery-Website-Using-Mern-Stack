@@ -112,7 +112,7 @@ https://grocery-six-sigma.vercel.app/
     - Endpoint: /api/product/stock	
 			
 
-### Authentication
+## Authentication
   - Both users and sellers use JWT + HTTP-only cookies.
   - Users get token in token, sellers in sellerToken.
   - Cookies are secured with:
@@ -121,7 +121,7 @@ https://grocery-six-sigma.vercel.app/
     - sameSite: none/strict
   - Session lasts 7 days.
 
-### Stripe Integration
+## Stripe Integration
   - Payments handled via Stripe Checkout Sessions.
   - Webhook used to:
     - Confirm payment success
