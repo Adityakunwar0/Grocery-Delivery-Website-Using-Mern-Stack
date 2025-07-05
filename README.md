@@ -128,6 +128,6 @@ https://grocery-six-sigma.vercel.app/
     - Clear cart
     - Delete failed orders
 
-Author
+### Author
 Aditya Kunwar
 Full Stack Developer | Passionate about building scalable and intelligent web apps
