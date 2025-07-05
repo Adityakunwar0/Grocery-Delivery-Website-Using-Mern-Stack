@@ -28,7 +28,7 @@ https://grocery-six-sigma.vercel.app/
  - Toggle product stock availability
  -  View paid/COD orders
 
-### Tech Stack
+## Tech Stack
  ### Frontend
   - React.js with React Router
   - Tailwind CSS for modern UI
@@ -42,8 +42,8 @@ https://grocery-six-sigma.vercel.app/
   - Stripe API for payment processing
   - Cloudinary for image uploads 
 
-### API Endpoints
-- User Routes
+## API Endpoints
+### User Routes
    - Register new user
      - Method: POST
      - Endpoint: /api/user/register
@@ -57,7 +57,7 @@ https://grocery-six-sigma.vercel.app/
      - Method: GET	
      - EndPoint: /api/user/is-auth
 	
-- Cart & Address
+### Cart & Address
    - Update cart items
      - Method: POST
      - EndPoint: /api/cart/update
@@ -69,7 +69,7 @@ https://grocery-six-sigma.vercel.app/
      - EndPoint: /api/address/get
 	
 
-- Orders
+### Orders
  - Place order via COD
    - Method: POST
    - Endpoint: /api/order/cod
@@ -86,7 +86,7 @@ https://grocery-six-sigma.vercel.app/
    - Method: POST
    - Endpoint: /stripe
 
-- Seller Routes
+### Seller Routes
   - Seller login
     - Method: POST
     - EndPoint: /api/seller/login
@@ -97,7 +97,7 @@ https://grocery-six-sigma.vercel.app/
     - Method: GET
     - EndPoint: /api/seller/is-auth
 
-- Products
+### Products
   - Add a new product
     - Method: POST
     - Endpoint: /api/product/add
@@ -119,7 +119,7 @@ https://grocery-six-sigma.vercel.app/
     - httpOnly: true
     - secure: true (in production)
     - sameSite: none/strict
- - Session lasts 7 days.
+  - Session lasts 7 days.
 
 ### Stripe Integration
   - Payments handled via Stripe Checkout Sessions.
