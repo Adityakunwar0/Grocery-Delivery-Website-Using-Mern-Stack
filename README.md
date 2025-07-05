@@ -129,5 +129,5 @@ https://grocery-six-sigma.vercel.app/
     - Delete failed orders
 
 ### Author
-Aditya Kunwar
-Full Stack Developer | Passionate about building scalable and intelligent web apps
+- Aditya Kunwar
+ - Full Stack Developer | Passionate about building scalable and intelligent web apps
